@@ -6,13 +6,14 @@ function App() {
 
 
   return (
-    <>
-      <video autoPlay loop muted playsInline></video>
+     <>
+     <WellcomeMsg />
+
 
       <form id="form_area">
-     
-     </form>
-    </>
+    
+      </form>
+     </>
   )
 }
 

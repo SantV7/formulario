@@ -1,0 +1,9 @@
+#header {
+    padding:  10px;
+    text-align: justify;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 35px;
+    flex-flow: column nowrap;
+}
