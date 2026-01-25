@@ -1,0 +1,22 @@
+#text_info_contract_msg {
+   margin-top: 30px;
+   display: flex;
+   flex-flow: column nowrap;
+   justify-content: center;
+   align-items: center;
+   gap: 35px;
+   padding: 8px;
+}
+
+#text_info_contract_msg  > h2 {
+   font-size: 1.87em;
+}
+
+#text_info_contract_msg  > #paragraph_text_project {
+   border-radius: 6px;
+   text-align: justify;
+   font-size: 20px;
+   border: 1px solid rgba(0, 0, 0, 0.555);
+   padding: 10px;
+   height: 140px;
+}

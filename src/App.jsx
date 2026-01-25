@@ -19,7 +19,6 @@ function App() {
 
           <TextInfoContract />
 
-
         </form>
       </main>
      </>
