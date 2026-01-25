@@ -1,16 +1,26 @@
 #header {
     padding: 10px;
     text-align: center;
-    background-image:linear-gradient(to bottom, rgba(0, 0, 0, 0.514), rgb(0, 0, 0)) ,url(../../assets/imgs/background.jpg);
-    background-position: bottom center;
-    background-size: cover;
-    background-repeat: no-repeat;
+    overflow: hidden;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 35px;
     flex-flow: column nowrap;
 }
+
+#header > .header_background {
+    background-image:linear-gradient(to bottom, rgba(0, 0, 0, 0.514), rgb(0, 0, 0)) ,url(../../assets/imgs/background.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;    
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+    filter: blur(1.7px);
+}
+
 header > h2 {
     margin-top: 17px;
     font-family: var(--poppins-font), Arial, Helvetica, sans-serif;
@@ -18,6 +28,7 @@ header > h2 {
     font-size: 28.8px;
     text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.712);
 }
+
 #header > p {
     font-family: var(--poppins-font);
     font-size: 20px;
