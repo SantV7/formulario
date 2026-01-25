@@ -1,12 +1,14 @@
+import WellcomeMsg from "./components/WellcomeMsg"
 
 function App() {
 
 
   return (
     <>
-    <form>
+     <form>
+       <WellcomeMsg />
 
-    </form>
+     </form>
     </>
   )
 }
