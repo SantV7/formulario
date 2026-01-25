@@ -44,7 +44,7 @@
    }
 }
 
-#text_info_contract_msg>#paragraph_text_project {
+#text_info_contract_msg > #paragraph_text_project {
    border-radius: 6px;
    text-align: justify;
    font-family: poppins, Arial, Helvetica, sans-serif;
@@ -54,3 +54,21 @@
    padding: 10px;
    background-image: linear-gradient(245deg, rgb(6, 5, 14), rgba(65, 65, 92, 0.836));
 }
+
+#text_info_contract_msg > #paragraph_text_project > #area_arrow {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+#text_info_contract_msg > #paragraph_text_project > #area_arrow > .arrow_right {
+   background-color: white;
+   margin: -3px;
+   width: 40px;
+   height: 40px;
+   clip-path: polygon(0% 100%, 100% 0%, 100% 100%, 0% 100%);
+}
+
+
+
+
