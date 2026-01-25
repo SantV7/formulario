@@ -47,13 +47,16 @@ header > h2 {
  @keyframes animationIcon {
     
     0% {
+        margin-left: 8px;
         transform: translateY(0);
     }
     50% {
-        transform: translateY(10px);
-        scale: 1.15;
+        margin-left: 8px;
+        transform: translateY(8px);
+        scale: 1.05;
     }
     100% {
+        margin-left: 8px;
         transform: translateY(0);
     }
 
@@ -63,6 +66,9 @@ header > h2 {
     border-radius: 3px;
     border-bottom: 3px solid rgb(113, 120, 221);
 }
+
+
+
 
 @media screen and (min-width:768px) {
 

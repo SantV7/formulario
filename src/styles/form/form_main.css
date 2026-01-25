@@ -1,6 +1,6 @@
 main {
-   background-color: rgb(186, 219, 224);
-   padding: 7px;
+   background-color: rgb(225, 234, 243);
+   padding: 8.76px;
    width: 100%;
    height: 100vh;
 }
@@ -15,9 +15,11 @@ main > #form_area {
 }
 
 main > #form_area > #form_header {
-   margin: -2px -4.5px;
+   margin: 7.7px -4.5px 0px -4.5px;
    display: flex;
-   justify-content: space-between;
+   height: 90px;
+   gap: 100px;
+   justify-content: space-evenly;
    align-items: start;
 }
 main > #form_area > #form_header > #vy_logo {
@@ -28,7 +30,7 @@ main > #form_area > #form_header > #vy_logo {
    height: 145px;
    width: 145px;
    margin-top: -35px;
-   margin-left: -14px;
+   margin-left: -30px;
 }
 
 main > #form_area > #form_header > #icon_contract {
