@@ -1,7 +1,10 @@
 #header {
     padding: 10px;
     text-align: center;
-    background-color: rgb(18, 17, 29);
+    background-image:linear-gradient(130deg, rgba(0, 0, 0, 0.514), rgb(7, 8, 10)) ,url(../../assets/imgs/background.jpg);
+    background-position: bottom center;
+    background-size: cover;
+    background-repeat: no-repeat;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -9,7 +12,7 @@
     flex-flow: column nowrap;
 }
 header > h2 {
-    margin-top: 23px;
+    margin-top: 17px;
     font-family: var(--poppins-font), Arial, Helvetica, sans-serif;
     color: rgb(219, 219, 255);
     font-size: 28.8px;
@@ -18,19 +21,45 @@ header > h2 {
 #header > p {
     font-family: var(--poppins-font);
     font-size: 20px;
-    margin: 0px 20px;
+    padding-bottom: 25px;
     color: white;
+    max-width: 440px;
 }
 
-#header > p > #heart_intro {
-    margin-bottom: -8px;
-    color: rgb(255, 72, 0); 
+#header > p > #icon_intro {
+    margin-bottom: -19.45px;
+    color: rgb(111, 55, 254); 
+    animation: animationIcon  1.45s ease-in-out infinite;
 }
+ @keyframes animationIcon {
+    
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(10px);
+        scale: 1.15;
+    }
+    100% {
+        transform: translateY(0);
+    }
 
+ }
 
 #header  .highlight_border {
     border-radius: 3px;
     border-bottom: 3px solid rgb(113, 120, 221);
+}
+
+@media screen and (min-width:768px) {
+
+    header > h2 {
+        font-size: 33px;
+    }
+    #header > p  {
+        text-align: justify;
+        font-size: 23px;
+    }
 }
 
 
