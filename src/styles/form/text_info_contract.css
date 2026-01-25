@@ -62,12 +62,28 @@
 }
 
 #text_info_contract_msg > #paragraph_text_project > #area_arrow > .arrow_right {
+   border-radius: 3px;
    background-color: white;
    margin: -3px;
    width: 40px;
+   transition: ease 1s;
    height: 40px;
    clip-path: polygon(0% 100%, 100% 0%, 100% 100%, 0% 100%);
+   animation: scaleUping ease 1.3s infinite;
 }
+
+@keyframes scaleUping {
+   0% {
+      scale: 1;
+   }
+   50% {
+      scale: 1.1;
+   }
+   100% {
+      scale: 1;
+   }
+}
+
 
 
 
