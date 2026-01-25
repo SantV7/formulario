@@ -1,6 +1,7 @@
 #header {
     padding: 10px;
     text-align: center;
+    background-color: rgb(18, 17, 29);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -9,8 +10,8 @@
 }
 header > h2 {
     margin-top: 23px;
-    font-family: var(--tech-font), Arial, Helvetica, sans-serif;
-    color: rgb(144, 144, 253);
+    font-family: var(--poppins-font), Arial, Helvetica, sans-serif;
+    color: rgb(219, 219, 255);
     font-size: 28.8px;
     text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.712);
 }
@@ -31,3 +32,8 @@ header > h2 {
     border-radius: 3px;
     border-bottom: 3px solid rgb(113, 120, 221);
 }
+
+
+
+
+/* clip-path: polygon(0 0 , 100% 0, 100% 95%, 0 100%); */
