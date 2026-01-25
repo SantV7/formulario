@@ -1,9 +1,33 @@
 #header {
-    padding:  10px;
-    text-align: justify;
+    padding: 10px;
+    text-align: center;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 35px;
     flex-flow: column nowrap;
+}
+header > h2 {
+    margin-top: 23px;
+    font-family: var(--tech-font), Arial, Helvetica, sans-serif;
+    color: rgb(144, 144, 253);
+    font-size: 28.8px;
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.712);
+}
+#header > p {
+    font-family: var(--poppins-font);
+    font-size: 20px;
+    margin: 0px 20px;
+    color: white;
+}
+
+#header > p > #heart_intro {
+    margin-bottom: -8px;
+    color: rgb(255, 72, 0); 
+}
+
+
+#header  .highlight_border {
+    border-radius: 3px;
+    border-bottom: 3px solid rgb(113, 120, 221);
 }
