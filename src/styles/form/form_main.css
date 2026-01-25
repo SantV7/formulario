@@ -1,0 +1,8 @@
+#form_area {
+    background-image: linear-gradient(rgba(57, 64, 99, 0.418), rgba(0, 0, 0, 0.575)) ,url(../../assets/video/0_Abstract_Geometric_1280x720.mp4);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;   
+    height: 600px;
+    width: 600px;
+}

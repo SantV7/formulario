@@ -1,13 +1,16 @@
 import WellcomeMsg from "./components/WellcomeMsg"
+import '../src/styles/form/form_main.css'
+import './styles/global.css'
 
 function App() {
 
 
   return (
     <>
-     <form>
-       <WellcomeMsg />
+      <video autoPlay loop muted playsInline></video>
 
+      <form id="form_area">
+     
      </form>
     </>
   )
