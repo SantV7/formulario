@@ -9,7 +9,6 @@ const TextInfoContract = () => {
          <p>Preencha com seus dados e o tipo de projeto que você tem em mente.</p>
          <p>Caso só tenha a idéia, não tem problema, vamos discutir as idéias juntos</p>
       </div>
-
     </section>
     </>
   )
