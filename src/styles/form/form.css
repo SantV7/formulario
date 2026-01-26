@@ -1,0 +1,6 @@
+form > .area_input > .input_data {
+   display: flex;
+   flex-flow: column nowrap;
+   justify-content: center;
+   align-items: center;
+}
