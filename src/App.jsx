@@ -3,6 +3,7 @@ import { FaFileContract } from "react-icons/fa6";
 import '../src/styles/form/main_text.css'
 import './styles/global.css'
 import TextInfoContract from "./components/TextInfoContract";
+import Form from "./components/Form";
 function App() {
 
 
@@ -20,8 +21,7 @@ function App() {
           <TextInfoContract />
         </div>
 
-
-
+        <Form />
       </main>
      </>
   )
