@@ -1,3 +1,10 @@
+import { HiOutlineMail } from "react-icons/hi"; <HiOutlineMail /> // close email
+import { HiOutlineMailOpen } from "react-icons/hi"; <HiOutlineMailOpen /> // open email
+// Email icons
+
+import { PiEyeClosedDuotone } from "react-icons/pi"; <PiEyeClosedDuotone />  // close eye PI
+import { PiEyeDuotone } from "react-icons/pi"; <PiEyeDuotone /> // open eye
+// Password icons
 
 const Form = () => {
   return (
@@ -6,7 +13,7 @@ const Form = () => {
           <div className="area_input">
             <div className="input_data">
               <label htmlFor="name_user">Nome</label>
-              <input type="text"  required name='name_user' placeholder='Seu primeiro nome' id='name_input'/>
+              <input type="text" required name='name_user' placeholder='Seu primeiro nome' id='name_input'/>
 
               <label htmlFor="email_user">Email</label>
               <input type="email" required name="email_user"placeholder='Seu E-mail' id="email_input" />
