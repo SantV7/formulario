@@ -1,28 +1,27 @@
 main {
    background-color: rgb(225, 234, 243);
-   padding: 8.76px;
+   padding: 8px;
    width: 100%;
    height: 100vh;
 }
 
-main > #form_area {
+main > #box_introdution_area {
    background-color: white;
-   height: 100%;
    width: 100%;
    border-radius: 10px;
    padding: 12.4px;
-   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.28);
+   box-shadow: 0px 0px 6px rgba(66, 31, 137, 0.208);
 }
 
-main > #form_area > #form_header {
-   margin: 7.7px -4.5px 0px -4.5px;
+main > #box_introdution_area > #form_header {
+   margin: 7.7px 6px 0px 11px;
    display: flex;
    height: 90px;
-   gap: 100px;
-   justify-content: space-evenly;
+   justify-content: space-between;
    align-items: start;
 }
-main > #form_area > #form_header > #vy_logo {
+
+main > #box_introdution_area > #form_header > #vy_logo {
    background-image: url(../../assets/imgs/vy_logo.png);
    background-repeat: no-repeat;
    background-position: center center;
@@ -33,6 +32,6 @@ main > #form_area > #form_header > #vy_logo {
    margin-left: -30px;
 }
 
-main > #form_area > #form_header > #icon_contract {
-   margin-top: 9.47px;
+main > #box_introdution_area > #form_header > #icon_contract {
+   margin-top: 10px;
 }

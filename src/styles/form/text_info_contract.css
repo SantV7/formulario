@@ -8,12 +8,14 @@
    padding: 8px;
 }
 
-#text_info_contract_msg>h2 {
+#text_info_contract_msg > h2 {
    font-size: 1.75em;
    font-family: var(--poppins-font);
    border-radius: 3px;
    position: relative;
    padding-bottom: 10px;
+   margin-top: 18px;
+   margin-bottom: 80px;
 }
 
 #text_info_contract_msg>h2::after {
