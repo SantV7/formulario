@@ -1,3 +1,7 @@
+import { FaRegUser } from "react-icons/fa6";  <FaRegUser /> // normal user
+import { FaUser } from "react-icons/fa6"; <FaUser /> // focus user
+// User icons
+
 import { HiOutlineMail } from "react-icons/hi"; <HiOutlineMail /> // close email
 import { HiOutlineMailOpen } from "react-icons/hi"; <HiOutlineMailOpen /> // open email
 // Email icons
