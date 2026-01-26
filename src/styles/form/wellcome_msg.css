@@ -31,8 +31,9 @@ header > h2 {
 }
 
 #header > p {
-    font-family: var(--poppins-font);
-    font-size: 20px;
+    font-family: var(--poppins-font),Arial, Helvetica, sans-serif;
+    font-size: 21px;
+    font-weight: 500;
     padding-bottom: 50px;
     color: white;
     max-width: 440px;

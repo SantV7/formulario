@@ -14,8 +14,7 @@
    border-radius: 3px;
    position: relative;
    padding-bottom: 10px;
-   margin-top: 18px;
-   margin-bottom: 80px;
+   margin-bottom: 70px;
 }
 
 #text_info_contract_msg>h2::after {
@@ -26,7 +25,7 @@
    width: 0;
    height: 4px;
    background: linear-gradient(90deg, rgb(42, 75, 182), rgb(202, 213, 250), rgb(77, 46, 252));
-   animation: borderAnimation 3.57s ease-in-out infinite;
+   animation: borderAnimation 3.6s ease infinite;
 }
 
 @keyframes borderAnimation {
