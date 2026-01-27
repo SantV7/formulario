@@ -59,18 +59,19 @@ const Form = () => {
               </div>
 
               <label htmlFor="text_Area_User">Deixe sua mensagem</label>  {/* Vou colocar um ícone aqui depois, provavelmente icone de recado ou um lapis*/}
+
               <textarea name="text_Area_User" id="textarea_box"></textarea>
 
               <label htmlFor="reason_to_be_here">Motivo da mensagem</label>
               <div className="input_radio_area">
-                <input type="radio" name="reason" value={'Trabalho'} />
-                <label htmlFor="reason">Trabalho</label>
+                <input type="radio" name="reason" id="reason_trabalho" value={'Trabalho'} />
+                <label htmlFor="reason_trabalho">Trabalho</label>
 
-                <input type="radio" name="reason" value={'te conhecer'} />
-                <label htmlFor="">Te conhecer</label>
+                <input type="radio" name="reason" id="reason_conhecer" value={'te conhecer'} />
+                <label htmlFor="reason_conhecer">Te conhecer</label>
                 
-                <input type="radio" name="reason" value={''} />
-                <label htmlFor="outro">Outro</label>
+                <input type="radio" name="reason" id="reason_outro" value={'Outro'} />
+                <label htmlFor="reason_outro">Outro</label>
               </div>
 
             </div>
