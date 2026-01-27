@@ -43,7 +43,7 @@ const Form = () => {
               onBlur={() => setEmailIcon(false)}
               placeholder='Seu E-mail' 
               id="email_input" 
-            />add
+            />
             {emailIcon
               ? <HiOutlineMailOpen size={21.4} className="icons_styling"/>
               : <HiOutlineMail size={21.4} className="icons_styling"/>
