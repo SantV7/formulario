@@ -1,5 +1,5 @@
 form {
-   margin: 35px -9px 10px -9px;
+   margin: 85px -9px 10px -9px;
    padding: 8.7px;
    background-image: linear-gradient(190deg, rgb(87, 76, 150), rgb(45, 45, 63));
 }
@@ -9,6 +9,7 @@ form {
    flex-flow: row wrap;
    justify-content: center;
    align-items: flex-start;
+   gap: 22.5px;
 }
 
 .input_data {
@@ -42,22 +43,25 @@ form {
    margin-top: -16px;
 }
 
-
 #file_user_input {
    background-color: transparent;
 }
+
 
 .input_display input,
 .input_display textarea {
    margin-bottom: 15px;
    margin-top: 8px;
-   padding: 8px;
+   padding: 13.6px;
    border-radius: 7px;
    outline: none;
-   border: none;
    transition: border ease 0.39s;
    border: 2px solid transparent;
    width: 100%;
+}
+
+.input_display input {
+   border: 2px solid rgba(0, 0, 0, 0.74);
 }
 
 .input_display textarea {
@@ -69,6 +73,11 @@ form {
 .input_display input:focus,
 .input_display textarea:focus {
    border: 2px solid rgb(177, 161, 250);
+}
+
+.input_display input::placeholder {
+   font-weight: 600;
+   font-size: 1.08em;
 }
 
 .input_radio_area {
@@ -91,5 +100,25 @@ form {
 
 input[type="file"] {
    background-color: white;
-   padding: 6px;
+   padding: 10px;
+}
+
+#file_user_input::-webkit-file-upload-button {
+   padding: 8px 8px;
+   background-color: rgb(118, 106, 184);
+   color: white;
+   
+   border: none;
+   border-radius: 6px;
+   font-size: 1.2em;
+   font-weight: 550;
+   cursor: pointer;
+   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.259);
+   font-family: poppins, Arial, Helvetica, sans-serif;
+}
+
+#file_user_input:valid {
+   border: 2px solid rgba(147, 147, 255, 0.623);
+   border-radius: 8px;
+   background-image: linear-gradient(20deg, rgba(0, 0, 0, 0.596), rgba(128, 0, 128, 0.349));
 }

@@ -59,6 +59,7 @@ const Form = () => {
             <input 
               type="tel" 
               required 
+              placeholder="Seu número para contato"
               name="cell_phone_input" 
               id="cell_phone_input" 
             />
@@ -107,6 +108,10 @@ const Form = () => {
             </div>
           </div>
         </div>
+      </div>
+
+      <div className="btn_submit">
+        <button>Enviar</button>
       </div>
     </form>
   );
