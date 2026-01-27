@@ -48,15 +48,33 @@ const Form = () => {
 
             <div className="input_data">
               <label htmlFor="cell_phone_input">Telefone</label>
-              <div className="input_display"><input type="tel" required name="cell_phone_input" id="cell_phone_input" /></div>
+              <div className="input_display">
+                <input type="tel" required name="cell_phone_input" id="cell_phone_input" />
+              </div>
               
 
               <label htmlFor="file_user"Anexar arquivo></label>
-              <div className="input_display"><input type="file" accept=".png,.jpg,.pdf,.doc" name="file_usesr" id="file_user_input" /></div>
+              <div className="input_display">
+                <input type="file" accept=".png,.jpg,.pdf,.doc" name="file_usesr" id="file_user_input" />
+              </div>
+
+              <label htmlFor="text_Area_User">Deixe sua mensagem</label>  {/* Vou colocar um ícone aqui depois, provavelmente icone de recado ou um lapis*/}
+              <textarea name="text_Area_User" id="textarea_box"></textarea>
+
+              <label htmlFor="reason_to_be_here">Motivo da mensagem</label>
+              <div className="input_radio_area">
+                <input type="radio" name="reason" value={'Trabalho'} />
+                <label htmlFor="reason">Trabalho</label>
+
+                <input type="radio" name="reason" value={'te conhecer'} />
+                <label htmlFor="">Te conhecer</label>
+                
+                <input type="radio" name="reason" value={''} />
+                <label htmlFor="outro">Outro</label>
+              </div>
+
             </div>
           </div>
-
-            
          </form>
        </>
   )
