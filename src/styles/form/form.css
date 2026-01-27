@@ -1,12 +1,51 @@
 form {
+   margin-top: 50px;
+   padding: 15px;
    border-radius: 5px;
    background-image: linear-gradient(190deg, rgb(48, 44, 73), rgb(94, 94, 141));
 }
 
-
-form > .area_input > .input_data {
+form > .area_input  {
    display: flex;
    flex-flow: column nowrap;
+   justify-content: left;
+   align-items: center;
+}
+
+
+form > .area_input > .input_data > .label_position {
+   display: flex;
+   width: 50%;
+}
+
+form > .area_input > .input_data > .label_position > label  {
+   font-size: 1.1em;
+   font-family: poppins, Arial, Helvetica, sans-serif;
+   color: white;
+}
+
+form > .area_input > .input_data > .input_display {
+   display: flex;
    justify-content: center;
    align-items: center;
+   flex-flow: row nowrap;
+   gap: 5px;
+   color: rgb(202, 202, 255);
+}
+form > .area_input > .input_data > .input_display > .icons_styling {
+   margin-top: -16px;
+}
+
+form > .area_input > .input_data > .input_display > input {
+   margin-bottom: 15px;
+   padding: 8px;
+   border-radius: 7px;
+   outline: none;
+   border: none;
+   transition: border ease 0.39s;
+   border: 2px solid transparent;
+}
+
+form > .area_input > .input_data > .input_display > input:focus {
+   border: 2px solid rgb(177, 161, 250);
 }

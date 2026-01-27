@@ -15,7 +15,6 @@ const Form = () => {
 
    const [userIcon, setUserIcon] = useState(false)
    const [emailIcon, setEmailIcon] = useState(false)
-   const [passwordIcon, setPasswordIcon] = useState(false)
 
 
   return (
@@ -23,31 +22,37 @@ const Form = () => {
          <form action="/TEST" method='POST'>
           <div className="area_input">
             <div className="input_data">
-              <label htmlFor="name_user">Nome</label>
+              <div className="label_position">
+                <label htmlFor="name_user">Nome</label>
+              </div>
               <div className="input_display">
                 <input type="text" required name='name_user' onClick={() => setUserIcon(!userIcon)}
                   placeholder='Seu primeiro nome' id='name_input'/>
                  {
                   userIcon
-                  ? <FaUser />
-                  : <FaRegUser />
+                  ? <FaUser size={21.4} className="icons_styling"/>
+                  : <FaRegUser size={21.4} className="icons_styling"/>
                  }
               </div>
 
-              <label htmlFor="email_user">Email</label>
+              <div className="label_position">
+                <label htmlFor="email_user">Email</label>
+              </div>
               <div className="input_display">
                 <input type="email" required name="email_user" onClick={() => setEmailIcon(!emailIcon)} 
                 placeholder='Seu E-mail' id="email_input" />
                 {
                   emailIcon
-                  ? <HiOutlineMailOpen />
-                  : <HiOutlineMail />
+                  ? <HiOutlineMailOpen size={21.4} className="icons_styling"/>
+                  : <HiOutlineMail size={21.4} className="icons_styling"/>
                 }
               </div>
             </div>
 
             <div className="input_data">
-              <label htmlFor="cell_phone_input">Telefone</label>
+              <div className="label_position">
+                <label htmlFor="cell_phone_input">Telefone</label>
+              </div>
               <div className="input_display">
                 <input type="tel" required name="cell_phone_input" id="cell_phone_input" />
               </div>
