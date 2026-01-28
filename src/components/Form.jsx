@@ -16,7 +16,7 @@ const Form = () => {
         <div className="input_data">
           <div className="label_position">
             <label htmlFor="name_user">Nome</label>
-            <IoMdArrowDropdown size={32} className="icon_arrow_indicator" />
+            <IoMdArrowDropdown size={34} className="icon_arrow_indicator" />
           </div>
           <div className="input_display">
             <input 
@@ -36,7 +36,7 @@ const Form = () => {
 
           <div className="label_position">
             <label htmlFor="email_user">Email</label>
-            <IoMdArrowDropdown size={32} className="icon_arrow_indicator" />
+            <IoMdArrowDropdown size={34} className="icon_arrow_indicator" />
           </div>
           <div className="input_display">
             <input 
@@ -58,7 +58,7 @@ const Form = () => {
         <div className="input_data">
           <div className="label_position">
             <label htmlFor="cell_phone_input">Telefone</label>
-            <IoMdArrowDropdown size={32} className="icon_arrow_indicator" />
+            <IoMdArrowDropdown size={34} className="icon_arrow_indicator" />
           </div>
           <div className="input_display">
             <input 
