@@ -18,7 +18,7 @@
     height: 100%;
     position: absolute;
     z-index: -1;
-    filter: blur(1.7px);
+    filter:saturate(185%);
 }
 
 header > h2 {
@@ -42,7 +42,7 @@ header > h2 {
 #header > p > #icon_intro {
     margin-bottom: -19.45px;
     color: rgb(111, 55, 254); 
-    animation: animationIcon  1.45s ease-in-out infinite; 
+    animation: animationIcon  2s ease-in-out infinite; 
 }
 
  @keyframes animationIcon {
@@ -54,7 +54,7 @@ header > h2 {
     50% {
         margin-left: 8px;
         transform: translateY(8px);
-        scale: 1.05;
+        scale: 1.3;
     }
     100% {
         margin-left: 8px;
@@ -63,7 +63,7 @@ header > h2 {
 
  }
 
-#header  .highlight_border {
+#header .highlight_border {
     border-radius: 3px;
     border-bottom: 3px solid rgb(113, 120, 221);
 }

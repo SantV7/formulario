@@ -154,3 +154,8 @@ input[type="file"] {
    transform: translateY(1.5px);
    border-bottom: 5px solid rgb(255, 255, 255);
 }
+
+.icon_arrow_indicator {
+   color: rgb(255, 217, 0);
+   margin-bottom: -25px;
+}
