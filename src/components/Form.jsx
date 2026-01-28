@@ -1,20 +1,21 @@
 import { useState } from "react";
 import { FaRegUser, FaUser } from "react-icons/fa6";
 import { HiOutlineMail, HiOutlineMailOpen } from "react-icons/hi";
+import { IoMdArrowDropdown } from "react-icons/io";
 import '../styles/form/form.css';
 
 const Form = () => {
   const [userIcon, setUserIcon] = useState(false);
   const [emailIcon, setEmailIcon] = useState(false);
 
-  
+
   return (
     <form action="/TEST" method='POST'>
       <div className="area_input">
         {/* Primeira coluna */}
         <div className="input_data">
           <div className="label_position">
-            <label htmlFor="name_user">Nome</label>
+            <label htmlFor="name_user">Nome <IoMdArrowDropdown className="icon_arrow_indicator" /></label>
           </div>
           <div className="input_display">
             <input 
@@ -33,7 +34,7 @@ const Form = () => {
           </div>
 
           <div className="label_position">
-            <label htmlFor="email_user">Email</label>
+            <label htmlFor="email_user">Email <IoMdArrowDropdown className="icon_arrow_indicator" /></label>
           </div>
           <div className="input_display">
             <input 
@@ -54,7 +55,7 @@ const Form = () => {
 
         <div className="input_data">
           <div className="label_position">
-            <label htmlFor="cell_phone_input">Telefone</label>
+            <label htmlFor="cell_phone_input">Telefone <IoMdArrowDropdown className="icon_arrow_indicator" /></label>
           </div>
           <div className="input_display">
             <input 
