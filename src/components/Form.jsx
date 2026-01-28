@@ -7,6 +7,7 @@ const Form = () => {
   const [userIcon, setUserIcon] = useState(false);
   const [emailIcon, setEmailIcon] = useState(false);
 
+  
   return (
     <form action="/TEST" method='POST'>
       <div className="area_input">
