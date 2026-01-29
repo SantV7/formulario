@@ -10,9 +10,9 @@ const Form = () => {
 
 
   return (
-    <form action="/TEST" method='POST'>
+    <form action="" method='POST'>
       <div className="area_input">
-        {/* Primeira coluna */}
+        
         <div className="input_data">
           <div className="label_position">
             <label htmlFor="name_user">Nome</label>
@@ -78,6 +78,7 @@ const Form = () => {
               type="file" 
               accept=".png,.jpg,.pdf,.doc" 
               name="file_user" 
+              multiple
               id="file_user_input" 
             />
           </div>
@@ -116,7 +117,10 @@ const Form = () => {
       </div>
 
       <div className="btn_submit">
-        <button>Enviar</button>
+        <button 
+        id="btn_send_data"
+        type="submit">Enviar</button>
+        <button id="delete-data" type="reset">Apagar dados</button>
       </div>
     </form>
   );

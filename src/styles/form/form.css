@@ -136,26 +136,40 @@ input[type="file"] {
 
 .btn_submit {
    display: flex;
-   justify-content: center;
+   justify-content: space-evenly;
    align-items: center;
    padding-top: 60px;
    padding-bottom: 63px;
 }
 
-.btn_submit > button {
+.btn_submit > #btn_send_data {
    border: none;
    border-radius: 10.7px;
    font-size: 23px;
    font-weight: 600;
    color: white;
-   padding: 10px 65px;
+   padding: 10px 45px;
    cursor: pointer;
    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.315);
    background-color: rgb(157, 157, 255);
-   transition: ease 0.4s;
+   border-bottom: 5px solid transparent;
+   transition: ease 0.65s;
 }
 
-.btn_submit > button:hover {
+.btn_submit > #delete-data {
+   border-radius: 8.87px;
+   border: none;
+   color: rgb(16, 15, 15);
+   text-shadow: 0px 0px 1px rgba(255, 255, 255, 0.393);
+   cursor: pointer;
+   font-weight: 550;
+   font-size: 23px;
+   padding: 10px 20px;
+   background-color: rgb(255, 140, 0);
+   transition: ease 0.65s;
+}
+
+.btn_submit > #btn_send_data:hover, #delete-data:hover {
    transform: translateY(1.5px);
    border-bottom: 5px solid rgb(255, 255, 255);
 }
