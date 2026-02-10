@@ -1,18 +1,16 @@
 #header {
     padding: 10px;
     text-align: center;
-    overflow: hidden;
     display: flex;
-    background-image:linear-gradient(to bottom, rgba(11, 13, 28, 0.514), rgb(0, 0, 0)) ,url(../../assets/imgs/background.jpg);
+    background-image:linear-gradient(to bottom, rgba(19, 23, 46, 0.37), rgb(0, 0, 0)) ,url(../../assets/imgs/background.jpg);
+    background-color: rgb(19, 23, 46);
     background-position: center center;
     background-size: cover;
     align-items: center;
     justify-content: center;
     gap: 35px;
     flex-flow: column nowrap;
-    filter:saturate(135%);
 }
-
 
 header > h2 {
     margin-top: 17px;
