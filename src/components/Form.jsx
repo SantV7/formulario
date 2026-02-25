@@ -9,15 +9,17 @@ const Form = () => {
   const [emailIcon, setEmailIcon] = useState(false);
   
 
-  const nome = document.getElementById('name_input').value
-  const email = document.getElementById('email_input').value
 
-  const validation = () => {
+  const validation = (e) => {
+    e.preventDefault()
+
+      const nome = document.getElementById('name_input').value
+      const email = document.getElementById('email_input').value
     if(nome.length <= 2) {
-      alert('Digite um nome com mais de duas letras')
+      alert('Digite um nome com mais de dois caracteres')
       document.formulario.name_user.focus()
       return false
-    } else if(email.length == '') {
+    } else if(email.length == 0) {
       alert('Digite o email')
       document.formulario.email_user.focus()
       return false
@@ -32,7 +34,7 @@ const Form = () => {
 
 
   return (
-    <form name="formulario" onSubmit={() => validation()} method='POST'>
+    <form name="formulario" onSubmit={validation}>
       <div className="area_input">
         
         <div className="input_data">
@@ -145,7 +147,7 @@ const Form = () => {
         <button id="delete-data" type="reset">Apagar dados</button>
       </div>
     </form>
-  );
+  )
 }
 
-export default Form;
+export default Form
