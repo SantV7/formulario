@@ -7,10 +7,32 @@ import '../styles/form/form.css';
 const Form = () => {
   const [userIcon, setUserIcon] = useState(false);
   const [emailIcon, setEmailIcon] = useState(false);
+  
+
+  const nome = document.getElementById('name_input').value
+  const email = document.getElementById('email_input').value
+
+  const validation = () => {
+    if(nome.length <= 2) {
+      alert('Digite um nome com mais de duas letras')
+      document.formulario.name_user.focus()
+      return false
+    } else if(email.length == '') {
+      alert('Digite o email')
+      document.formulario.email_user.focus()
+      return false
+    }
+    else {
+      alert('Enviado')
+      return true
+    }
+
+  }
+  
 
 
   return (
-    <form action="" method='POST'>
+    <form name="formulario" onSubmit={() => validation()} method='POST'>
       <div className="area_input">
         
         <div className="input_data">
