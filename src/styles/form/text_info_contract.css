@@ -17,7 +17,7 @@
    margin-bottom: 70px;
 }
 
-#text_info_contract_msg>h2::after {
+#text_info_contract_msg> h2::after {
    content: '';
    position: absolute;
    bottom: 0;
@@ -28,22 +28,6 @@
    animation: borderAnimation 3.6s ease infinite;
 }
 
-@keyframes borderAnimation {
-   0% {
-      border-radius: 6px;
-      width: 2%;
-   }
-
-   50% {
-      border-radius: 6px;
-      width: 60%;
-   }
-
-   100% {
-      border-radius: 6px;
-      width: 100%;
-   }
-}
 
 #text_info_contract_msg > #paragraph_text_project {
    border-radius: 6px;
@@ -72,6 +56,25 @@
    clip-path: polygon(0% 100%, 100% 0%, 100% 100%, 0% 100%);
    animation: scaleUping ease 1.3s infinite;
 }
+
+
+@keyframes borderAnimation {
+   0% {
+      border-radius: 6px;
+      width: 2%;
+   }
+
+   50% {
+      border-radius: 6px;
+      width: 60%;
+   }
+
+   100% {
+      border-radius: 6px;
+      width: 100%;
+   }
+}
+
 
 @keyframes scaleUping {
    0% {

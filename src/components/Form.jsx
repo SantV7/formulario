@@ -8,30 +8,40 @@ const Form = () => {
   const [userIcon, setUserIcon] = useState(false);
   const [emailIcon, setEmailIcon] = useState(false);
   
+  const [formData, setFormData] = useState({
+    name_user: '',
+    email_user: '',
+    cell_phone_input: '',
+    text_Area_User: '',
+    reason: ''
+  });
 
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData((prevState) => ({
+      ...prevState,
+      [name]: value
+    }));
+  };
 
   const validation = (e) => {
-    e.preventDefault()
+    e.preventDefault();
 
-      const nome = document.getElementById('name_input').value
-      const email = document.getElementById('email_input').value
-    if(nome.length <= 2) {
-      alert('Digite um nome com mais de dois caracteres')
-      document.formulario.name_user.focus()
-      return false
-    } else if(email.length == 0) {
-      alert('Digite o email')
-      document.formulario.email_user.focus()
-      return false
-    }
-    else {
-      alert('Enviado')
-      return true
+    const nome = formData.name_user;
+    const email = formData.email_user;
+
+    if (nome.length <= 2) {
+      alert('Digite um nome com mais de dois caracteres');
+      return;
+    } 
+    
+    if (email.length === 0) {
+      alert('Digite o email');
+      return;
     }
 
-  }
-  
-
+    alert('Enviado');
+  };
 
   return (
     <form name="formulario" onSubmit={validation}>
@@ -47,10 +57,12 @@ const Form = () => {
               type="text" 
               required 
               name='name_user' 
+              id='name_input'
+              value={formData.name_user}
+              onChange={handleChange}
               onFocus={() => setUserIcon(true)}
               onBlur={() => setUserIcon(false)}
               placeholder='Seu primeiro nome' 
-              id='name_input'
             />
             {userIcon
               ? <FaUser size={21.4} className="icons_styling"/>
@@ -67,13 +79,15 @@ const Form = () => {
               type="email" 
               required 
               name="email_user" 
+              id="email_input" 
+              value={formData.email_user}
+              onChange={handleChange}
               onFocus={() => setEmailIcon(true)}
               onBlur={() => setEmailIcon(false)}
               placeholder='Seu E-mail' 
-              id="email_input" 
             />
             {emailIcon
-              ? <HiOutlineMailOpen size={21.4} className="icons_styling"/>
+              ? <HiOutlineMailOpen size={21.5} className="icons_styling"/>
               : <HiOutlineMail size={21.4} className="icons_styling"/>
             }
           </div>
@@ -91,6 +105,8 @@ const Form = () => {
               placeholder="Seu número para contato"
               name="cell_phone_input" 
               id="cell_phone_input" 
+              value={formData.cell_phone_input}
+              onChange={handleChange}
             />
           </div>
           
@@ -115,6 +131,8 @@ const Form = () => {
               name="text_Area_User" 
               id="textarea_box"
               rows="4"
+              value={formData.text_Area_User}
+              onChange={handleChange}
             ></textarea>
           </div>
 
@@ -123,17 +141,17 @@ const Form = () => {
           </div>
           <div className="input_radio_area">
             <div className="radio_option">
-              <input type="radio" name="reason" id="reason_trabalho" value={'Trabalho'} />
+              <input type="radio" name="reason" id="reason_trabalho" value={'Trabalho'} onChange={handleChange} />
               <label htmlFor="reason_trabalho">Trabalho</label>
             </div>
             
             <div className="radio_option">
-              <input type="radio" name="reason" id="reason_conhecer" value={'te conhecer'} />
+              <input type="radio" name="reason" id="reason_conhecer" value={'te conhecer'} onChange={handleChange} />
               <label htmlFor="reason_conhecer">Te conhecer</label>
             </div>
             
             <div className="radio_option">
-              <input type="radio" name="reason" id="reason_outro" value={'Outro'} />
+              <input type="radio" name="reason" id="reason_outro" value={'Outro'} onChange={handleChange} />
               <label htmlFor="reason_outro">Outro</label>
             </div>
           </div>
@@ -141,13 +159,17 @@ const Form = () => {
       </div>
 
       <div className="btn_submit">
+        <button id="btn_send_data" type="submit">Enviar</button>
         <button 
-        id="btn_send_data"
-        type="submit">Enviar</button>
-        <button id="delete-data" type="reset">Apagar dados</button>
+          id="delete-data" 
+          type="reset"
+          onClick={() => setFormData({name_user: '', email_user: '', cell_phone_input: '', text_Area_User: '', reason: ''})}
+        >
+          Apagar dados
+        </button>
       </div>
     </form>
   )
 }
 
-export default Form
+export default Form;
